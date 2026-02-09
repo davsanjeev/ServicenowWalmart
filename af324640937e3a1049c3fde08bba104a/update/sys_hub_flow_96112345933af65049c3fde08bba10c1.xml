@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>demo_script</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"3e0625d7-7c18-4391-a1fe-0ef7e43b975f":["requested_item"]},"attributes":{"default_search_field":"number"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Demo_Script</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:51:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>96112345933af65049c3fde08bba10c1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Demo_Script</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name>sys_hub_flow_96112345933af65049c3fde08bba10c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:53:35</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2026-01-30 20:53:26">ba9123c5933af65049c3fde08bba1079</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=96112345933af65049c3fde08bba10c1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=96112345933af65049c3fde08bba10c1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=96112345933af65049c3fde08bba10c1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=96112345933af65049c3fde08bba10c1^sys_idNOT INd6112345933af65049c3fde08bba10c2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>96112345933af65049c3fde08bba10c1</id>
+        <name>Demo_Script</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:51:12</sys_created_on>
+        <sys_id>d6112345933af65049c3fde08bba10c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:51:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d6112345933af65049c3fde08bba10c2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=96112345933af65049c3fde08bba10c1^sys_idNOT IN4f212b45933af65049c3fde08bba1040,f2212b45933af65049c3fde08bba100f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Demo_Script">96112345933af65049c3fde08bba10c1</model>
+        <model_id>96112345933af65049c3fde08bba10c1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_96112345933af65049c3fde08bba10c1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:51:31</sys_created_on>
+        <sys_id>4f212b45933af65049c3fde08bba1040</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:51:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4f212b45933af65049c3fde08bba1040"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Demo_Script">96112345933af65049c3fde08bba10c1</model>
+        <model_id>96112345933af65049c3fde08bba10c1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_96112345933af65049c3fde08bba10c1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:51:31</sys_created_on>
+        <sys_id>f2212b45933af65049c3fde08bba100f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:51:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f2212b45933af65049c3fde08bba100f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=96112345933af65049c3fde08bba10c1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=96112345933af65049c3fde08bba10c1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=96112345933af65049c3fde08bba10c1^sys_idNOT IN7a21a74d93f6f65049c3fde08bba104e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Demo_Script">96112345933af65049c3fde08bba10c1</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:51:31</sys_created_on>
+        <sys_id>7a21a74d93f6f65049c3fde08bba104e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:51:31</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61UTW/bMAz9K4FOG5CDk6zNmtuQoUCAbAWarpdiMBiJToTKkifJbrOg/31k/BF3M4YB3SkSTfI9Pj7l4SgMbNGIhbgt7ejauKfRyoqx0Dait2DuDgXSR7l3WiLF68NahygWD0eR3YMpOSFzHnfelVZRUrbu9cy4p6bfVxmrHHZcx+cNGpQRlVhkYAJS5Fvo377oELTdNYGXcQ92C/Lx77DnjNE7hRmUJr5/I4HvY5GDVRCdP5yTvMvvMC8MROyCziv0YjFJkrGomPLmEFaqRrWQM74vbcpcU82yV81cdFQ6ULPD/Tki99ooj5aUJwoFeOoQuf+xW9da28ehZM2gl8lVIufTq/l8msxmSZJdbDOZSTn/OEkuJxdXVDVshkGq8Tdn8L1dwLIN9gXA54hW9XT9U0SPoG6sOQf2NFg9Tw7PQf8kxA8J52VIs8lGmO6aNqI1e/0METbRlzKWvtOQmYWTec2/26Ua8lszXMKOHOr1yvHV0ENp5WFLNWjL/09w8maCUyZYS3dTRO3IVWLGO4et4ZpwCLUzPEoqSaPXux0VUpEzZW6/DhmoYd8zeBlog1iwS3jt7cva7N3Tbbvia21PlJqPxkkw3Q0iIW/LyPodBagKqIKtTyZA8TJmoksDITSEau+kP0rucXp0LXp6mvFUIr0u4icZdYXdP8AvVvv7+TgFAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=96112345933af65049c3fde08bba10c1^sys_idNOT IN8061e385933af65049c3fde08bba10b8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Demo_Script">96112345933af65049c3fde08bba10c1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:52:25</sys_created_on>
+        <sys_id>8061e385933af65049c3fde08bba10b8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:53:25</sys_updated_on>
+        <ui_id>3e0625d7-7c18-4391-a1fe-0ef7e43b975f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91VUU/bMBD+K1GeqyppGAXeNhjSpA2kduJlQpbtXFprjh1sp6Wr+O87J05SGCpFgknbW3N3tr/v7r6vP7axyOOzeMoSRjPKeJYmaZYkk5OjlB1nLJ3kGYViGo9iRUvASk4dlXpBVtQIyiRYTK2orH0Of+bCVpJuboYIXwqZG1Dx2Y/bUVxRg/c4MPHZ9knqUCCSMpBYet4iiW52kOwB6TaVT1lZ2yWr+U9wIfg13Df3mehTl9Im9ygnoxjuHagcEF5BpYVRXFKVU6fNpo8YoPm1kkNgKZRr+Zf03opf+HQ6SZLElxaAnHloT/9JQuvacHGBFObO1NzVpu+kFhy5NN3KoaC1dOe7sbbgunJCq/aI8+zDaS3rUl21DYr7C3YmVVsEAZXn6sEHJsV8qdezDuWlUE1bQlJqTmX/RZ0zgtXO48HFsqSQGAI1zIEogKaTcXMEHwUJJT5HSlpVQi1IZfRKNE8g4nK8kPgxLqReIzQrFmpMuac3xgHQ8SXGL5pwtwTf8Bo87AeQAzG1cqIE0iwoEYroyq4ErPFybK1/Xigua6wssRXC4Cs9VHB2KPOt2QEBhqxN+1JfUhk8Y1ZALFLiriEZUlbXBgfcDUM4KBGJp4H9WMcPWLGx55JaO4wH94Lc1b657bDCWEg7WX+EG1G5j9iNFYQJPIyCnNl+FaWDUhAKLp0D0knGg9uR9BGdTGnKT08zBtPjD8nRKc+KHJITxmiaHLM/JX8F6+gzXqo3ANG1YpqaHAf7aic4gEPnBN8DiaizhC9Iwkao0t4cormf54u0g0kMGn1sEbOdePCHdL8/+A04zB6yyWNvsI7gVjwCaAle3G8osS2l5xzk5Ub8kwZTzIEavrwUIP2KNMN8ajvvZShoZwZK7YKOye6sgs4P9ByLfHF4nkkXfAcLKPbJB+igBQN3NVg0rKfa327naGg48E5XJB2H4qb04eEN/vAPwNnJfF6zUuD/SR7NWhR7OLxeyMm7CZnjrtx1wJ5T66xD3+j1fxFnXbJGOH9HnhqnQnKjqyqQfmNd3f4GraGdXSsLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8061e385933af65049c3fde08bba10b8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=96112345933af65049c3fde08bba10c1"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=96112345933af65049c3fde08bba10c1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=96112345933af65049c3fde08bba10c1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=96112345933af65049c3fde08bba10c1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_96112345933af65049c3fde08bba10c1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:51:31</sys_created_on>
+        <sys_id>47212b45933af65049c3fde08bba1073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:51:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_96112345933af65049c3fde08bba10c1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-31 04:51:31</sys_created_on>
+        <sys_id>c3212b45933af65049c3fde08bba103d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-31 04:51:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_96112345933af65049c3fde08bba10c1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_96112345933af65049c3fde08bba10c1"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=96112345933af65049c3fde08bba10c1"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=96112345933af65049c3fde08bba10c1"/>
+</record_update>

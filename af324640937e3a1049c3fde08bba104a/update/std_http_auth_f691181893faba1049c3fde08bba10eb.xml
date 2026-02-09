@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="std_http_auth">
+    <std_http_auth action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auth_processor>false</auth_processor>
+        <description>DemoGlobalOauth</description>
+        <name>DemoGlobalOauth</name>
+        <oauth_entity display_value="DemoWalmartApiRest">b14eeb8c93f2ba1049c3fde08bba10fa</oauth_entity>
+        <sys_class_name>std_http_auth</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 05:52:18</sys_created_on>
+        <sys_id>f691181893faba1049c3fde08bba10eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DemoGlobalOauth</sys_name>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name>std_http_auth_f691181893faba1049c3fde08bba10eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 05:52:18</sys_updated_on>
+        <type>access_token</type>
+    </std_http_auth>
+</record_update>
