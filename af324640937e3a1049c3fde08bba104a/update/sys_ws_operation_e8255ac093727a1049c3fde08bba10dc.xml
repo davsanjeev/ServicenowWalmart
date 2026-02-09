@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>getEmpList</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+   try {
+        // -------------------------------
+        // 1️⃣ Check if request body exists AND has keys
+        // -------------------------------
+        var body = request.body && request.body.data;
+
+        if (!body || Object.keys(body).length === 0) {
+            response.setStatus(400);
+            response.setBody({
+                error: "Request body is required anitha"
+            });
+            return;
+        }
+        // -------------------------------
+        // 2️⃣ Now validate required fields
+        // -------------------------------
+        if (!body.emp_number) {
+            response.setStatus(400);
+            response.setBody({
+                error: "Missing required parameter: Emp Number"
+            });
+            return;
+        }
+        // -------------------------------
+        // 3️⃣ Proceed to get  employee details (example)
+        // -------------------------------
+        var result = [];
+        var empGR = new GlideRecord('u_employee');
+        empGR.addQuery('u_empnumber', body.emp_number);
+        empGR.query();
+
+        while (empGR.next()) {
+            result.push({
+                emp_number: empGR.u_empnumber.toString(),
+                first_name: empGR.u_firstname.toString(),
+                last_name: empGR.u_lastname.toString(),
+                age: empGR.u_age.toString(),
+                created_by: empGR.u_createdby.toString(),
+                salary: empGR.u_salary.toString()
+            });
+        }
+        response.setStatus(200);
+        response.setBody(result);
+
+	} catch (ex) {
+        response.setStatus(500);
+        response.setBody({
+            error: "Internal Server Error",
+            message: ex.message
+        });
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1355384_walmart/demorestapiwalmart/getEmpList</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/getEmpList</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-27 20:46:34</sys_created_on>
+        <sys_id>e8255ac093727a1049c3fde08bba10dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getEmpList</sys_name>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name>sys_ws_operation_e8255ac093727a1049c3fde08bba10dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-27 20:46:34</sys_updated_on>
+        <web_service_definition display_value="DemoRestAPIWalmart">e405d2c093727a1049c3fde08bba109e</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

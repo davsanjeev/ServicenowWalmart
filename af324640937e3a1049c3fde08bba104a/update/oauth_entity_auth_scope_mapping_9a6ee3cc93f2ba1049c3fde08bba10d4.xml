@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_auth_scope_mapping">
+    <oauth_entity_auth_scope_mapping action="INSERT_OR_UPDATE">
+        <auth_scope display_value="DemoWalmart_authScope">806ce30893f2ba1049c3fde08bba100e</auth_scope>
+        <oauth_entity display_value="DemoWalmartApiRest">b14eeb8c93f2ba1049c3fde08bba10fa</oauth_entity>
+        <sys_class_name>oauth_entity_auth_scope_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 03:15:45</sys_created_on>
+        <sys_id>9a6ee3cc93f2ba1049c3fde08bba10d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name>oauth_entity_auth_scope_mapping_9a6ee3cc93f2ba1049c3fde08bba10d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 03:15:45</sys_updated_on>
+    </oauth_entity_auth_scope_mapping>
+</record_update>

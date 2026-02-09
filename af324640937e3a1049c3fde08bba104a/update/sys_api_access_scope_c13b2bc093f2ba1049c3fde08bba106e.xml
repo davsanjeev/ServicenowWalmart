@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_api_access_scope">
+    <sys_api_access_scope action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api>DemoRestAPIWalmart</api>
+        <api_path>x_1355384_walmart/demorestapiwalmart</api_path>
+        <api_resource/>
+        <apply_all_methods>true</apply_all_methods>
+        <apply_all_resources>true</apply_all_resources>
+        <apply_all_versions>true</apply_all_versions>
+        <auth_scope display_value="DemoWalmart_authScope">806ce30893f2ba1049c3fde08bba100e</auth_scope>
+        <disable_client_restriction>false</disable_client_restriction>
+        <http_method/>
+        <name>DemoWalmartAuth</name>
+        <sys_class_name>sys_api_access_scope</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 03:09:36</sys_created_on>
+        <sys_id>c13b2bc093f2ba1049c3fde08bba106e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DemoWalmartAuth</sys_name>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name>sys_api_access_scope_c13b2bc093f2ba1049c3fde08bba106e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 03:09:36</sys_updated_on>
+        <version/>
+    </sys_api_access_scope>
+</record_update>

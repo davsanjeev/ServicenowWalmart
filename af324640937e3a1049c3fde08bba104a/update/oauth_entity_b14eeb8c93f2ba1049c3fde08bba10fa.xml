@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_aig_client>false</auth_aig_client>
+        <auth_code_lifespan>60</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>e2c69ee464d6406d90928d9f8f0495e8</client_id>
+        <client_secret>﷞﷟﷒c9f5224593567ad049c3fde08bba10bc﷬﷔1﷬﷭vWc_pO6G3ymKQWy49asQ9Q==lFh3qdU9LrXwCQmCZ4CpESiZ84KI6EftmSFqyy7Al3-v0iMlWIAaO9b9F9y24ssQ﷮﷯</client_secret>
+        <client_type/>
+        <client_uuid>714eeb8c93f2ba1049c3fde08bba10fa</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>password</default_grant_type>
+        <extend_refresh_token_expiry>false</extend_refresh_token_expiry>
+        <id_token_lifespan>86400</id_token_lifespan>
+        <inbound_grant_type>ropc</inbound_grant_type>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>60</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>DemoWalmartApiRest</name>
+        <oauth_api_script/>
+        <only_rest_processor>false</only_rest_processor>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url/>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt/>
+        <scope_restriction_status>restricted</scope_restriction_status>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sub_claim>sys_id</sub_claim>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 03:15:25</sys_created_on>
+        <sys_id>b14eeb8c93f2ba1049c3fde08bba10fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DemoWalmartApiRest</sys_name>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name>oauth_entity_b14eeb8c93f2ba1049c3fde08bba10fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 03:15:25</sys_updated_on>
+        <token_format>opaque</token_format>
+        <token_url/>
+        <type>client</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <use_pkce>false</use_pkce>
+        <user/>
+    </oauth_entity>
+</record_update>

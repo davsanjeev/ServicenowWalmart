@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>empMultiple</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    try {
+
+        // ]]>🔥<![CDATA[ PURE ARRAY BODY
+        var employees = request.body.data;
+
+        // Validate array
+        if (!employees || !Array.isArray(employees)) {
+            response.setStatus(400);
+            response.setBody({
+                error: "Request body must be an array anitha pandi"
+            });
+            return;
+        }
+
+        var result = [];
+        var gL = employees.length;
+		gs.info("Employee Length"+gL);
+
+        for (var i = 0; i < employees.length; i++) {
+
+            var emp = employees[i];
+
+            if (!emp.u_empnumber) {
+                result.push({
+                    status: "failed",
+                    reason: "u_empnumber missing",
+                    record: emp
+                });
+                continue;
+            }
+
+            var gr = new GlideRecord('u_employee');
+            gr.initialize();
+            gr.setValue('u_empnumber', emp.u_empnumber);
+            gr.setValue('u_firstname', emp.u_firstname);
+            gr.setValue('u_lastname', emp.u_lastname);
+            gr.setValue('u_age', emp.u_age);
+            gr.setValue('u_createdby', emp.u_createdby);
+            gr.setValue('u_salary', emp.u_salary);
+
+            var sysId = gr.insert();
+
+            result.push({
+                status: sysId ? "success" : "failed",
+                emp_number: emp.u_empnumber,
+                sys_id: sysId || ""
+            });
+        }
+
+        response.setStatus(201);
+        response.setBody({
+            message: "Employees processed",
+            result: result
+        });
+
+    } catch (ex) {
+        gs.error("Employee API error: " + ex);
+
+        response.setStatus(500);
+        response.setBody({
+            error: "Internal Server Error",
+            message: ex.toString()
+        });
+    }
+
+})(request, response);
+]]></operation_script>
+        <operation_uri>/api/x_1355384_walmart/demorestapiwalmart/empMultiple</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/empMultiple</relative_path>
+        <request_example>PostMan Configurations:&#13;
+Token Name: DemoWalmart&#13;
+Access Token URL: https://dev350905.service-now.com/oauth_token.do&#13;
+Client ID: e2c69ee464d6406d90928d9f8f0495e8&#13;
+Client Secret: SX9d`iZ&amp;Z7U]|0Q?0KC([+9ZjYNwHI7c&#13;
+Username:token.id&#13;
+Password:P8@(z0?4UUi2C?SM@JohEhfxc7m3ZSk&amp;WY+@?8RmTnKogpZ2fhRcte;THA]?&#13;
+Client Authentication: Send client credentials in body&#13;
+&#13;
+Then click "GetNewAccessToken" Button &#13;
+==========================================&#13;
+[&#13;
+    {&#13;
+        "u_empnumber": "EMP0001010",&#13;
+        "u_firstname": "Sai",&#13;
+        "u_lastname": "Nitin",&#13;
+        "u_age": "25",&#13;
+        "u_createdby": "Kumar dev",&#13;
+        "u_salary": "67098"&#13;
+      },&#13;
+      {&#13;
+        "u_empnumber": "EMP0001011",&#13;
+        "u_firstname": "Sai",&#13;
+        "u_lastname": "Arun",&#13;
+        "u_age": "28",&#13;
+        "u_createdby": "Kumar dev",&#13;
+        "u_salary": "67988"&#13;
+      },&#13;
+      {&#13;
+        "u_empnumber": "EMP0001012",&#13;
+        "u_firstname": "San",&#13;
+        "u_lastname": "Nili",&#13;
+        "u_age": "75",&#13;
+        "u_createdby": "Kumar dev",&#13;
+        "u_salary": "670998"&#13;
+      },&#13;
+      {&#13;
+        "u_empnumber": "EMP0001013",&#13;
+        "u_firstname": "Suk",&#13;
+        "u_lastname": "Nasj",&#13;
+        "u_age": "29",&#13;
+        "u_createdby": "Kumar dev",&#13;
+        "u_salary": "67098"&#13;
+      },&#13;
+      {&#13;
+        "u_empnumber": "EMP0001014",&#13;
+        "u_firstname": "Ani",&#13;
+        "u_lastname": "Kuma",&#13;
+        "u_age": "25",&#13;
+        "u_createdby": "Kumar dev",&#13;
+        "u_salary": "68098"&#13;
+     }&#13;
+  ]</request_example>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-30 04:20:20</sys_created_on>
+        <sys_id>d45016b49372f25049c3fde08bba1027</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>empMultiple</sys_name>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_update_name>sys_ws_operation_d45016b49372f25049c3fde08bba1027</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-30 15:25:41</sys_updated_on>
+        <web_service_definition display_value="DemoRestAPIWalmart">e405d2c093727a1049c3fde08bba109e</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
