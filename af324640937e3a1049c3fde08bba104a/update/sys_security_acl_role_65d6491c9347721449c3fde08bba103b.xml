@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-09 19:57:28</sys_created_on>
+        <sys_id>65d6491c9347721449c3fde08bba103b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1355384_walmart_demo_githut.x_1355384_walmart.user</sys_name>
+        <sys_package display_value="Walmart" source="x_1355384_walmart">af324640937e3a1049c3fde08bba104a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Walmart">af324640937e3a1049c3fde08bba104a</sys_scope>
+        <sys_security_acl display_value="x_1355384_walmart_demo_githut">21d6491c9347721449c3fde08bba1030</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_65d6491c9347721449c3fde08bba103b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-09 19:57:28</sys_updated_on>
+        <sys_user_role display_value="x_1355384_walmart.user" name="x_1355384_walmart.user">86f7964c93727a1049c3fde08bba10c9</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
